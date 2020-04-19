@@ -1,0 +1,51 @@
+.container {
+  display: grid;
+  margin: 0 auto;
+  width: 1000px;
+  background: gray;
+  border-radius: 10px;
+  grid-template-columns: 540px; 1fr;
+  grid-template-rows: 1fr 1fr 1fr 5fr;
+  grid-gap: 10px 0;
+  grid-template-areas: 
+    "image quote1"
+    "image quote2"
+    "image quote3"
+    "main main";
+}
+.image {
+  background-color: orange;
+  grid-area: image;
+  border-radius: 5px;
+  margin: 10px 10px;
+}
+#image {
+  display: block;
+  max-width: 500px;
+  border-radius: 5px;
+  margin: 10px auto;
+}
+.quote1 {
+  background: orange;
+  grid-area: quote1;
+  border-radius: 10px;
+  margin: 10px 10px;
+}
+.quote2 {
+  background: orange;
+  grid-area: quote2;
+  border-radius: 10px;
+  margin: 10px 10px;
+}
+.quote3{
+  background: orange;
+  grid-area: quote3;
+  border-radius: 10px;
+  margin: 10px 10px;
+}
+.main {
+  background: orange;
+  grid-area: main;
+  border-radius: 10px;
+  margin: 10px 10px;
+}
