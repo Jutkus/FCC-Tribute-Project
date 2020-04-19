@@ -1,10 +1,51 @@
+.bg {
+  background-color: black;
+  margin: 0 0;
+}
+a {
+  text-decoration: none;
+}
+.header {
+  display: block;
+  background: gray;
+  width: 1000px;
+  height: 150px;
+  margin: 0 auto;
+  box-shadow: 0 0 4px 1px inset;
+  text-align: center;
+}
+#title {
+  margin: 0;
+  padding: 0;
+  font-family: 'Anton', sans-serif;
+  font-size: 60px;
+  letter-spacing: 10px;
+}
+#title2 {
+  margin: 0;
+  padding: 0;
+  line-height: 5px;
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 2px;
+}
+nav{
+  background-color:orange;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 200px;
+  padding: 0;
+  height: 0;
+  line-height: 75px;
+  font-family: 'Anton', sans-serif;
+  font-size: 25px;
+}
 .container {
   display: grid;
-  margin: 0 auto;
+  margin: 20px auto;
   width: 1000px;
   background: gray;
-  border-radius: 10px;
-  grid-template-columns: 540px; 1fr;
+  box-shadow: 0 0 5px 1px inset;
+  grid-template-columns: 550px; 1fr;
   grid-template-rows: 1fr 1fr 1fr 5fr;
   grid-gap: 10px 0;
   grid-template-areas: 
@@ -16,36 +57,56 @@
 .image {
   background-color: orange;
   grid-area: image;
-  border-radius: 5px;
+  border-radius: 10px;
   margin: 10px 10px;
+  box-shadow: 0 0 10px 1px inset, 5px 5px 10px 1px;
+}
+figcaption {
+  margin: 5px 10px;
+  text-align: center;
+  font-style: italic;
 }
 #image {
   display: block;
   max-width: 500px;
   border-radius: 5px;
-  margin: 10px auto;
+  margin: 20px auto;
 }
-.quote1 {
+blockquote {
+  display: block;
+  margin: 20px 20px;
+}
+#quote1 {
   background: orange;
   grid-area: quote1;
   border-radius: 10px;
   margin: 10px 10px;
+  box-shadow: 0 0 10px 1px inset, 5px 5px 10px 1px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 25px;
 }
-.quote2 {
+#quote2 {
   background: orange;
   grid-area: quote2;
   border-radius: 10px;
   margin: 10px 10px;
+  box-shadow: 0 0 10px 1px inset, 5px 5px 10px 1px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 25px;
 }
-.quote3{
+#quote3{
   background: orange;
   grid-area: quote3;
   border-radius: 10px;
   margin: 10px 10px;
+  box-shadow: 0 0 10px 1px inset, 5px 5px 10px 1px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 25px;
 }
-.main {
+#main {
   background: orange;
   grid-area: main;
   border-radius: 10px;
   margin: 10px 10px;
+  box-shadow: 0 0 10px 1px inset, 5px 5px 10px 1px;
 }
