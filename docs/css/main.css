@@ -1,18 +1,21 @@
+
+a{
+  color: #FFAB91;
+}
 .bg {
-  background-color: black;
-  margin: 0 0;
 }
 a {
   text-decoration: none;
 }
 .header {
+  background-image: linear-gradient(to bottom right, rgb(19, 80, 91), rgba(152, 114, 132, .85) );
   display: block;
-  background: gray;
-  width: 1000px;
+  width: 980px;
   height: 150px;
   margin: 0 auto;
-  box-shadow: 0 0 4px 1px inset;
+  box-shadow:  15px 15px 19px 6px rgba(152, 114, 132, .85);
   text-align: center;
+  color: #DDD5D0;
 }
 #title {
   margin: 0;
@@ -29,7 +32,6 @@ a {
   letter-spacing: 2px;
 }
 nav{
-  background-color:orange;
   display: flex;
   justify-content: space-evenly;
   margin: 0 200px;
@@ -43,8 +45,6 @@ nav{
   display: grid;
   margin: 20px auto;
   width: 1000px;
-  background: gray;
-  box-shadow: 0 0 5px 1px inset;
   grid-template-columns: 550px; 1fr;
   grid-template-rows: 1fr 1fr 1fr 5fr;
   grid-gap: 10px 0;
@@ -55,11 +55,11 @@ nav{
     "main main";
 }
 .image {
-  background-color: orange;
+  background-image: linear-gradient(to bottom right, rgb(219, 194, 207), rgba(152, 114, 132, .85) );
   grid-area: image;
   border-radius: 10px;
   margin: 10px 10px;
-  box-shadow: 0 0 10px 1px inset, 5px 5px 10px 1px;
+  box-shadow:  15px 15px 19px 6px rgba(152, 114, 132, .85);
 }
 figcaption {
   margin: 5px 10px;
@@ -77,36 +77,40 @@ blockquote {
   margin: 20px 20px;
 }
 #quote1 {
-  background: orange;
+  background-image: linear-gradient(to bottom right, rgb(19, 80, 91), rgba(152, 114, 132, .85) );
   grid-area: quote1;
   border-radius: 10px;
   margin: 10px 10px;
-  box-shadow: 0 0 10px 1px inset, 5px 5px 10px 1px;
+  box-shadow:  15px 15px 19px 6px rgba(152, 114, 132, .85);
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 25px;
+  color: #DDD5D0;
 }
 #quote2 {
-  background: orange;
+  background-image: linear-gradient(to bottom right, rgb(19, 80, 91), rgba(152, 114, 132, .85) );
   grid-area: quote2;
   border-radius: 10px;
   margin: 10px 10px;
-  box-shadow: 0 0 10px 1px inset, 5px 5px 10px 1px;
+  box-shadow:  15px 15px 19px 6px rgba(152, 114, 132, .85);
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 25px;
+  color: #DDD5D0;
 }
 #quote3{
-  background: orange;
+  background-image: linear-gradient(to bottom right, rgb(19, 80, 91), rgba(152, 114, 132, .85) );
   grid-area: quote3;
   border-radius: 10px;
   margin: 10px 10px;
-  box-shadow: 0 0 10px 1px inset, 5px 5px 10px 1px;
+  box-shadow:  15px 15px 19px 6px rgba(152, 114, 132, .85);
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 25px;
+  color: #DDD5D0;
 }
 #main {
-  background: orange;
+  background-image: linear-gradient(to bottom right, rgb(19, 80, 91), rgba(152, 114, 132, .85) );
   grid-area: main;
   border-radius: 10px;
   margin: 10px 10px;
-  box-shadow: 0 0 10px 1px inset, 5px 5px 10px 1px;
+  box-shadow:  15px 15px 19px 6px rgba(152, 114, 132, .85);
+  color: #DDD5D0;
 }
