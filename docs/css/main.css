@@ -26,8 +26,6 @@ h2 {
 .header {
   background-color: #944654;
   display: block;
-  width: 1030px;
-  height: 150px;
   margin: 0 auto;
   text-align: center;
   color: #ddd5d0;
@@ -38,15 +36,12 @@ h2 {
   margin: 0;
   padding: 0;
   font-family: "Anton", sans-serif;
-  font-size: 60px;
-  letter-spacing: 10px;
 }
 #title2 {
   margin: 0;
   padding: 0;
   line-height: 5px;
   font-family: "Anton", sans-serif;
-  letter-spacing: 2px;
 }
 nav {
   display: flex;
@@ -62,22 +57,13 @@ nav {
 .container {
   display: grid;
   margin: 20px auto;
-  width: 1050px;
-  grid-template-columns: 550px 1fr;
-  grid-template-rows: 1fr 1fr 1fr auto auto;
   grid-gap: 10px 0;
-  grid-template-areas:
-    "image quote1"
-    "image quote2"
-    "image quote3"
-    "content content"
-    "socialmedia socialmedia";
 }
 .image {
   background-color: #944654;
   grid-area: image;
   border-radius: 10px;
-  margin: 10px 10px;
+  margin: 10px 0;
   box-shadow: 10px 10px 3px 5px rgba(152, 114, 132, 0.85);
 }
 figcaption {
@@ -88,7 +74,6 @@ figcaption {
 }
 #image {
   display: block;
-  max-width: 500px;
   border-radius: 5px;
   margin: 20px auto;
 }
@@ -100,7 +85,7 @@ blockquote {
   background-color: #4b2e39;
   grid-area: quote1;
   border-radius: 10px;
-  margin: 10px 10px;
+  margin: 10px 0;
   box-shadow: 10px 10px 3px 5px rgba(152, 114, 132, 0.85);
   font-family: "Bree Serif", serif;
   font-size: 25px;
@@ -110,7 +95,7 @@ blockquote {
   background-color: #4b2e39;
   grid-area: quote2;
   border-radius: 10px;
-  margin: 10px 10px;
+  margin: 10px 0;
   box-shadow: 10px 10px 3px 5px rgba(152, 114, 132, 0.85);
   font-family: "Bree Serif", serif;
   font-size: 25px;
@@ -120,7 +105,7 @@ blockquote {
   background-color: #4b2e39;
   grid-area: quote3;
   border-radius: 10px;
-  margin: 10px 10px;
+  margin: 10px 0;
   box-shadow: 10px 10px 3px 5px rgba(152, 114, 132, 0.85);
   font-family: "Bree Serif", serif;
   font-size: 25px;
@@ -130,7 +115,7 @@ blockquote {
   background-color: #944654;
   grid-area: content;
   border-radius: 10px;
-  margin: 10px 10px;
+  margin: 10px 0;
   padding: 10px;
   box-shadow: 10px 10px 3px 5px rgba(152, 114, 132, 0.85);
   color: #ddd5d0;
@@ -138,13 +123,13 @@ blockquote {
   font-size: 20px;
 }
 li {
-  margin: 20px;
+  padding: 20px;
 }
 #socialmedia {
   background-color: #944654;
   grid-area: socialmedia;
   border-radius: 10px;
-  margin: 10px 10px;
+  margin: 10px;
   padding: 30px;
   box-shadow: 10px 10px 3px 5px rgba(152, 114, 132, 0.85);
   color: #ddd5d0;
@@ -155,11 +140,10 @@ li {
   padding: 25px;
   text-align: center;
 }
-@media (max-width: 900px) {
+@media (min-width: 300px) {
   .container {
-    margin: 20px auto;
-    width: 500px;
-    grid-template-columns: 500px;
+    width: 100%;
+    grid-template-columns: 100%;
     grid-template-rows: repeat(5, auto);
     grid-template-areas:
       "image"
@@ -170,28 +154,33 @@ li {
       "socialmedia";
   }
   .header {
-    width: 500px;
+    width: 100%;
+    height: 130px;
   }
   #image {
-    max-width: 450px;
+    max-width: 90%;
   }
   #title {
     font-size: 50px;
-    letter-spacing: 10px;
+    letter-spacing: 5px;
+  }
+  #title2 {
+    line-height: 5px;
+    letter-spacing: 1px;
   }
   nav {
     margin: 0 auto;
-    justify-content: space-evenly;
+    font-size: 25px;
+    letter-spacing: 2px;
   }
-  #main{
-    margin: 0px auto;
+  #socialmedia {
+    margin: 0px;
   }
 }
-@media (max-width: 600px) {
+@media (min-width: 768px) {
   .container {
-    margin: 20px auto;
-    width: 400px;
-    grid-template-columns: 400px;
+    width: 100%;
+    grid-template-columns: 100%;
     grid-template-rows: repeat(5, auto);
     grid-template-areas:
       "image"
@@ -201,22 +190,120 @@ li {
       "content"
       "socialmedia";
   }
-  .header {
-    width: 400px;
-  }
-  #image {
-    max-width: 350px;
-  }
   #title {
-    font-size: 50px;
-    letter-spacing: 10px;
+    font-size: 40px;
+    letter-spacing: 5px;
+  }
+  #title2 {
+    font-size: 25px;
+    line-height: 10px;
+  }
+  .header {
+    width: 100%;
   }
   nav {
-    margin: 0 auto;
-    justify-content: space-evenly;
+    margin: 0 200px;
+    font-size: 25px;
+    letter-spacing: 2px;
   }
-  #main{
-    margin: 0px auto;
+  #image {
+    max-width: 90%;
+  }
+  #socialmedia {
+    margin: 0px;
   }
 }
-
+@media (min-width: 1000px) {
+  .container {
+    width: 100%;
+    grid-template-columns: 1.25fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr auto auto;
+    grid-template-areas:
+      "image quote1"
+      "image quote2"
+      "image quote3"
+      "content content"
+      "socialmedia socialmedia";
+  }
+  .image {
+    margin: 10px;
+  }
+  #image {
+    max-width: 90%;
+  }
+  .header {
+    max-width: 98%;
+    height: 150px;
+  }
+  #title {
+    font-size: 60px;
+    letter-spacing: 10px;
+  }
+  #title2 {
+    line-height: 5px;
+    letter-spacing: 2px;
+  }
+  nav {
+    margin: 0 200px;
+    font-size: 25px;
+    letter-spacing: 2px;
+  }
+  #quote1,
+  #quote2,
+  #quote3 {
+    margin: 10px;
+  }
+  #tribute-info {
+    margin: 10px;
+  }
+  #socialmedia {
+    margin: 10px;
+  }
+}
+@media (min-width: 1097px) {
+  .container {
+    width: 1050px;
+    grid-template-columns: 550px 1fr;
+    grid-template-rows: 1fr 1fr 1fr auto auto;
+    grid-template-areas:
+      "image quote1"
+      "image quote2"
+      "image quote3"
+      "content content"
+      "socialmedia socialmedia";
+  }
+  .image {
+    margin: 10px;
+  }
+  #image {
+    max-width: 90%;
+  }
+  .header {
+    width: 1030px;
+    height: 150px;
+  }
+  #title {
+    font-size: 60px;
+    letter-spacing: 10px;
+  }
+  #title2 {
+    line-height: 5px;
+    letter-spacing: 2px;
+  }
+  nav {
+    margin: 0 200px;
+    font-size: 25px;
+    letter-spacing: 2px;
+  }
+  #quote1,
+  #quote2,
+  #quote3 {
+    margin: 10px;
+  }
+  #tribute-info {
+    margin: 10px;
+  }
+  #socialmedia {
+    margin: 10px;
+  }
+}
